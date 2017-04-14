@@ -1,0 +1,305 @@
+<!DOCTYPE>
+<title> Computer Science@PSU </title>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <script src="https://unpkg.com/react@15.4.0/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15.4.0/dist/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://npmcdn.com/react-router@2.4.0/umd/ReactRouter.min.js"></script>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+
+<body>
+<div id="container">
+    <script type="text/babel">
+        var { Router,
+            Route,
+            IndexRoute,
+            IndexLink,
+            Link } = ReactRouter;
+        var destination = document.querySelector("#container");
+
+        class Home extends React.Component {
+            render() {
+                return (
+                    <div id="an-1">
+                        <h2>Hello World!</h2>
+                        <p>Welcome! Do you plan to attend Portland State University and
+                            pursue a Master's degree in Computer Science? You're
+                            in the right spot!
+                        </p>
+                        <p>This place is a one stop for all your questions related to Computer
+                            Science department, courses, faculty, internships, etc. at Portland
+                            State University.
+                            Let's get started! Feel free to navigate through topics above and
+                            find answers to all the questions. We have added a general section
+                            for information about CPT & OPT. This will give you more details about CPT, the
+                            types of OPT and how these programs actually work. Please redirect any additional
+                            queries to any of our kind contributors in the contacts section.
+                        </p>
+                        <p>The main idea behind creating this space is to give you fast and quick
+                            access to information. Most people including ourselves in the past have
+                            reached out to current PSU students or Alumni on social networking platforms
+                            to find out more details about the university. Not all the people are responsive
+                            or they might be involved in much more important work at the time. Later, there is
+                            high possibility they might forget your message and cannot respond. We have all been
+                            in such situations previously, kindly understand that it is purely a result of more
+                            important things. If you are requesting any time-sensitive information
+                            and we do not respond in a timely manner it might affect your chances. Well, we don't want
+                            that to happen. Hence this website.
+                        </p>
+                        <p> We sincerely hope it helps!</p>
+                        <p>
+                            <h3>Have you applied yet? </h3>
+                            <p>
+                                Previously at PSU, there used to be two different applications, one for PSU and the other for the
+                                Department of Computer Science.
+                                Recently, it has been changed to only <em><strong>one</strong></em> single application to both the University and the
+                                Graduate program.
+                            </p>
+                            <p>
+                                <ins>Application Deadlines:</ins>
+                                <span id="span_tag">Fall - February 1st |
+                                Winter - February 1st |
+                                Spring - February 1st </span>
+                            </p>
+                            <p>
+                                Access the application <a href="https://www.pdx.edu/graduate-admissions/apply">here</a>!
+                                (Open link & Click on "Apply for Admission" tab)
+                            </p>
+                        </p>
+                    </div>
+                );
+            }
+        };
+
+        class Courses extends React.Component {
+            render() {
+                return (
+                    <div id="an-2">
+                        <h2>Course Information</h2>
+                        <p>
+                            <h3>Core Courses (Mandatory)</h3>
+                                <p>These courses must be passed with a grade of <b>B</b> or better.
+                                    It is highly recommended to take these courses
+                                    as early as possible in your graduate program (Preferably first year of your Master's).
+                                    These courses are often considered to be the <b><i>most</i></b> challenging courses at PSU. If in any of these courses,
+                                    you receive a grade lower than B (B- and below), you will have to retake the course.
+                                    These courses are minimum requirements to complete your graduation and obtain a degree.
+                                </p>
+                                <p>
+                                    <li>CS 581 Theory of Computation (3)</li>
+                                    <li> CS 558 Programming Languages (3)</li>
+                                    <li>CS 533 Concepts of Operating Systems (3)</li>
+                                </p>
+
+                            <h3>Track Courses</h3>
+                                <p>
+                                    There are 7 Tracks in total at PSU. Below are in-depth details about each and every track.
+                                    Given 45-credits for graduate degree, it is quite common to complete two different tracks along
+                                    the course of your graduate program. This opens up more opportunities in the job market. But,
+                                    If you are keen on learning only one track, become the master of it.
+                                </p>
+                                <h4>1. Databases (popular)</h4>
+                                <p>
+                                    The Database track covers concepts, languages, implementation and application of  database management
+                                    systems. Other topics that have been offered in the track include formal  foundations of databases, databases for
+                                    cloud and cluster environments, and data stream systems.
+                                </p>
+                                <p>
+                                    <h4>Required:</h4>
+                                    <li>CS 586 Introduction to Database Management Systems (3)</li>
+                                    <li>CS 587 Relational Database Management Systems (3)</li>
+                                    <h4>Electives (Any one course from the following):</h4>
+                                    <li>CS 588 Distributed Database Systems (3)</li>
+                                    <li>CS 589 Principles of Database Systems (3)</li>
+                                    <li>CS 510 Information Integration (3)</li>
+                                    <li>CS 510 Data Streams (3)</li>
+                                    <li>CS 510 Cloud & Cluster Databases (3)</li>
+                                    <li>Any CS 510 course in Databases</li>
+                                </p>
+
+                                <h4>2. Software Engineering (popular)</h4>
+                                <p>
+                                    Software Engineering: The Software Engineering track studies the principles, processes, techniques,
+                                    and tools for building software systems.  Topics include software requirement, design, development,
+                                    validation, and maintenance.
+                                </p>
+
+                                <p>
+                                    <h4>Required:</h4>
+                                    <li>CS 554 Software Engineering (3)</li>
+                                    <h4>Electives (Any two courses from the following):</h4>
+                                    <li>CS 552 Building Software Systems w/ Components (3)</li>
+                                    <li>CS 553 Design Patterns (3)</li>
+                                    <li>CS 555 Software Specification & Verification (3)</li>
+                                    <li>CS 556 Software Implementation and Testing (3)</li>
+                                    <li>CS 559 Software Measurement & Models (3)</li>
+                                    <li>CS 510 Software Quality Analysis (3)</li>
+                                    <li>CS 510 Modeling and Analysis of Software Systems (3)</li>
+                                    <li>CS 510 Software Architecture and Domain Analysis (3)</li>
+                                    <li>CS 510 Software Design Techniques (3)</li>
+                                    <li>CS 510 Advanced Topics in Software Engineering (3)</li>
+                                    <li>CS 510 Advanced Open Source Software Engineering (3)</li>
+                                    <li>CS 510 Software Development and Testing (3)</li>
+                                </p>
+
+                            <h3>Popular Combinations (Term-Wise)</h3>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            More Information - Coming soon!
+                        </p>
+                    </div>
+                );
+            }
+        };
+
+        class Professors extends React.Component {
+            render() {
+                return (
+                    <div id="an-3">
+                        <h2>Professors</h2>
+                        <p>More Information - Coming soon!</p>
+                    </div>
+                );
+            }
+        };
+
+        class Internships extends React.Component{
+            render() {
+                return (
+                    <div id="an-4">
+                        <h2>Internships</h2>
+                        <h3>Credits for Internship</h3>
+                        <p>The Computer Science department allows students to take a maximum of 9-credits per term towards internship.
+                            But, none of these credits will be counted towards to your degree or graduation.
+                        </p>
+                        <p><ins>Typical scenarios for Internships:</ins> <br></br>
+                            Generally, students are required to be enrolled for atleast 9-credits per term to maintain a full-time international
+                            student status. So, when a student secures an internship he/she might opt to take 'x' credits towards internship & 'y' credits
+                            towards coursework. Here, 'x' being between 1-9 and 'y' between 0-8.
+                            <br></br>
+                            <ins>Examples:</ins> <br></br>
+                                Internship (1 credit) + Coursework (8 credits) <br></br>
+                                Internship (3 credits) + Coursework (6 credits)
+                            <p> In any of the above cases, credits taken for internship should be paid for and won't be considered in the 45-credits.</p>
+                        </p>
+                        <p>
+                            <h3>Internship Eligibility</h3>
+                            <li>According to the USCIS regulations, any international student is eligible for internships only after completing 9-months
+                            of education in the United States.</li>
+                            <li>The computer science department at PSU requires all the students to complete atleast two of the three core courses
+                            to be eligible for an internship.</li>
+                        </p>
+                        <p>
+                            <ins>Key to securing an Internship</ins>
+                            <li>A well-drafted resume.</li>
+                            <li>Apply endlessly.</li>
+                            <li>Interact with company professionals at career fairs.</li>
+                        </p>
+                        <p>
+                            <h3>Major Industry Players</h3>
+                            <div>
+                                <img id="intelimg" src="images/intel.png"/>
+                                <img id="cdkimg" src="images/cdk.png"/>
+                                <img id="mentorimg" src="images/mentor.jpeg"/>
+                                <img id="daimlerimg" src="images/daimler.png"/>
+                                <img id="jamaimg" src="images/jama.png"/>
+                                <img id="pgeimg" src="images/pge.jpeg"/>
+                                <img id="elementalimg" src="images/elemental.png"/>
+                                <img id="puppetimg" src="images/puppet.jpeg"/>
+                                <img id="ibmimg" src="images/ibm.png"/>
+                            </div>
+                        </p>
+                    </div>
+                );
+            }
+        };
+
+        class Opt extends React.Component{
+            render() {
+                return (
+                    <div id="an-5">
+                        <h2>CPT & OPT Information</h2>
+                        <p>More Information - Coming soon!</p>
+                    </div>
+                );
+            }
+        };
+
+        class Author extends React.Component{
+            render() {
+                return (
+                    <div id="an-6">
+                        <h2>About Author</h2>
+                        <p>Venkata Yerneni(Sai Krishna Yerneni)</p>
+                        <p>More Information - Coming soon!</p>
+                    </div>
+                );
+            }
+        };
+
+        class Contact extends React.Component{
+            render() {
+                return (
+                    <div id="an-7">
+                        <h2>Got More Questions?</h2>
+                        <p>The easiest thing to do is send us
+                            an email at: <ins>cs.pdx.help@gmail.com</ins>
+                        </p>
+                    </div>
+                );
+            }
+        };
+
+        class App extends React.Component{
+            render() {
+                return (
+                    <div>
+                        <div>
+                            <img id="logo" src="images/psu_logo_1.png"></img>
+                            <h1 className="mainHeading">Computer Science@Portland State University</h1>
+                        </div>
+                        <ul className="header">
+                            <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
+                            <li><Link to="/course" activeClassName="active">Courses</Link></li>
+                            <li><Link to="/professors" activeClassName="active">Professors</Link></li>
+                            <li><Link to="/internships" activeClassName="active">Internships</Link></li>
+                            <li><Link to="/opt" activeClassName="active">CPT & OPT</Link></li>
+                            <li><Link to="/author" activeClassName="active">Authors</Link></li>
+                            <li><Link to="/contact" activeClassName="active">Contacts</Link></li>
+                        </ul>
+                        <div className="content">
+                            {this.props.children}
+                        </div>
+                    </div>
+                )
+            }
+        };
+
+        ReactDOM.render(
+            <Router>
+                <Route path="/" component={App}>
+                    <IndexRoute component={Home}/>
+                    <Route path="course" component={Courses}/>
+                    <Route path="professors" component={Professors}/>
+                    <Route path="internships" component={Internships}/>
+                    <Route path="opt" component={Opt}/>
+                    <Route path="author" component={Author}/>
+                    <Route path="contact" component={Contact}/>
+                </Route>
+            </Router>,
+            destination
+        );
+    </script>
+
+    <div id="footer">
+        <p>Here is some content that i want to see!</p>
+    </div>
+</div>
+</body>
+
+
+</html>

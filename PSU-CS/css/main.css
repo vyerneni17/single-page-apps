@@ -12,13 +12,13 @@ body {
     margin: 0;
 }
 
-img {
+#logo {
     height: 50px;
     width: 50px;
     margin-bottom: -12px;
 }
 
-h1, h2, p, ul, li {
+h1, h2, h3, p, ul, li {
     font-family: 'Cardo', Serif; !important;
 }
 
@@ -84,6 +84,17 @@ ul.header li a {
     min-height: 100%;
 }
 
+#intelimg, #cdkimg, #daimlerimg, #mentorimg {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+#pgeimg, #jamaimg, #elementalimg, #puppetimg, #ibmimg {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
 
 #an-1, #an-2, #an-3, #an-4, #an-5, #an-6, #an-7 {
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -120,5 +131,9 @@ ul.header li a {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+#span_tag {
+    white-space: nowrap;
 }
 
